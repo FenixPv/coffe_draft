@@ -17,6 +17,20 @@ $config = [
             'traceLevel' => YII_DEBUG ? 3 : 0,
         ],
     ],
+    'modules' => [
+        'site' => [
+            'class' => 'app\modules\site\Module',
+        ],
+        'user' => [
+            'class' => 'app\modules\user\Module',
+        ],
+        'catalog' => [
+            'class' => 'app\modules\catalog\Module',
+        ],
+        'cpanel' => [
+            'class' => 'app\modules\cpanel\Module',
+        ],
+    ],
 ];
 
 if (YII_ENV_DEV) {
